@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <style>
+        body { background: #FFA07A; }
+    </style>
+</head>
+<body>
+<div class="container py-5">
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <img src="img/cat1.jpg" class="card-img-top img-fluid" alt="Котята в цветах">
+                <div class="card-body">
+                    <h5 class="card-title">Название карточки</h5>
+                    <p class="card-text">Короткий пример текста, который дополняет название карточки и составляет основную часть её содержимого.</p>
+                    <!-- первая кнопка открывает модальное окно -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Перейти</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <img src="img/cat2.jpg" class="card-img-top img-fluid" alt="Кот на пледе">
+                <div class="card-body">
+                    <h5 class="card-title">Название карточки</h5>
+                    <p class="card-text">Короткий пример текста, который дополняет название карточки и составляет основную часть её содержимого.</p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <img src="img/cat3.jpg" class="card-img-top img-fluid" alt="Котёнок на синем пледе">
+                <div class="card-body">
+                    <h5 class="card-title">Название карточки</h5>
+                    <p class="card-text">Короткий пример текста, который дополняет название карточки и составляет основную часть её содержимого.</p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <p class="mt-4"><a href="index.html" class="btn btn-light">&larr; Формы, кнопки, таблицы</a></p>
+</div>
+
+<!-- Модальное окно с формой -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Вход</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="modalEmail" class="form-label">Адрес email</label>
+                        <input type="email" class="form-control" id="modalEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Мы никому не передадим вашу почту.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="modalPass" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="modalPass">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="modalCheck">
+                        <label class="form-check-label" for="modalCheck">Запомнить меня</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

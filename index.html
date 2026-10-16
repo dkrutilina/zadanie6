@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- 1. Горизонтальная форма в одну строку -->
+    <h4>Форма 1</h4>
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="email1">Email</label>
+            <input type="text" class="form-control" id="email1" placeholder="Введите email"
+                   pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}" title="Введите email в формате name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="pass1">Пароль</label>
+            <input type="password" class="form-control" id="pass1" placeholder="Пароль">
+        </div>
+        <button type="submit" class="btn btn-success">Войти</button>
+    </form>
+
+    <hr>
+
+    <!-- 2. Вертикальная форма -->
+    <h4>Форма 2</h4>
+    <form>
+        <div class="form-group">
+            <label for="email2">Email</label>
+            <input type="text" class="form-control" id="email2" placeholder="Введите email"
+                   pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}" title="Введите email в формате name@example.com">
+            <p class="help-block">Пример строки с подсказкой</p>
+        </div>
+        <div class="form-group">
+            <label for="pass2">Пароль</label>
+            <input type="password" class="form-control" id="pass2" placeholder="Пароль">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Чекбокс</label>
+        </div>
+        <button type="submit" class="btn btn-success">Войти</button>
+    </form>
+
+    <hr>
+
+    <!-- 3. Кнопки -->
+    <h4>Кнопки</h4>
+    <p>
+        <button type="button" class="btn btn-default">Стандартная</button>
+        <button type="button" class="btn btn-primary">Основная</button>
+        <button type="button" class="btn btn-success">Подтвердить</button>
+        <button type="button" class="btn btn-info">Уведомление</button>
+        <button type="button" class="btn btn-warning">Внимание</button>
+        <button type="button" class="btn btn-danger">Отмена</button>
+        <button type="button" class="btn btn-link">Ссылка</button>
+    </p>
+
+    <hr>
+
+    <!-- 4. Таблицы -->
+    <h4>Таблица 1</h4>
+    <table class="table table-striped" style="width:auto">
+        <tbody>
+            <tr><td>Иван</td><td>Николайчук</td><td>ivan@example.com</td></tr>
+            <tr><td>Мария</td><td>Иванова</td><td>mary@example.com</td></tr>
+            <tr><td>Юлия</td><td>Петренко</td><td>julia@example.com</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Таблица 2</h4>
+    <table class="table table-bordered" style="width:auto">
+        <thead>
+            <tr><th>Имя</th><th>Фамилия</th><th>Почта</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Иван</td><td>Николайчук</td><td>ivan@example.com</td></tr>
+            <tr><td>Мария</td><td>Иванова</td><td>mary@example.com</td></tr>
+            <tr><td>Юлия</td><td>Петренко</td><td>julia@example.com</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Таблица 3</h4>
+    <table class="table" style="width:auto">
+        <thead>
+            <tr>
+                <th class="active">Имя (active)</th>
+                <th class="success">Фамилия (success)</th>
+                <th class="info">Почта (info)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="warning">Иван (warning)</td><td>Николайчук</td><td class="danger">ivan@example.com (danger)</td></tr>
+            <tr><td>Мария</td><td>Иванова</td><td>mary@example.com</td></tr>
+            <tr><td>Юлия</td><td class="active">Петренко (active)</td><td>julia@example.com</td></tr>
+        </tbody>
+    </table>
+
+    <p><a href="cards.html" class="btn btn-primary">Страница с карточками &rarr;</a></p>
+</div>
+</body>
+</html>
